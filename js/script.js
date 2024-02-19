@@ -25,7 +25,6 @@ function optimizer(data) {
       Number(value).toFixed(2),
     ])
   );
-  return updatedPriceData;
 }
 
 let updatedPriceData = optimizer(priceData);
@@ -55,28 +54,7 @@ let filteredNames = userNames.filter((name) =>
 console.log(filteredNames);
 
 // 2) через умовну конструкцію всередині методу перебора
-const userNames = [
-  "Петро",
-  "Емма",
-  "Юстин",
-  "Ілля",
-  "Марта",
-  "Яна",
-  "Василь",
-  "Антон",
-  "Олена",
-];
-let ukrainianVowels = ["А", "Е", "Є", "И", "І", "Ї", "О", "У", "Ю", "Я"];
-let filteredNames = [];
 
-for (let name of userNames) {
-  if (ukrainianVowels.includes(name[0])) {
-    filteredNames.push(name);
-  }
-}
-console.log(filteredNames);
-
-// 3)
 const userNames = [
   "Петро",
   "Емма",
